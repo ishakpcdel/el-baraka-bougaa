@@ -1,0 +1,121 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial;
+    scroll-behavior:smooth;
+}
+
+body{
+    background:#f5f5f5;
+    direction:rtl;
+}
+
+/* ===== NAVBAR ===== */
+nav{
+    position:fixed;
+    top:0;
+    width:100%;
+    background:#0b3d1c;
+    padding:15px;
+    display:flex;
+    justify-content:center;
+    gap:20px;
+    z-index:1000;
+}
+
+nav a{
+    color:white;
+    text-decoration:none;
+    font-weight:bold;
+}
+
+nav a:hover{
+    color:#ffcc00;
+}
+
+/* ===== HERO ===== */
+.hero{
+    height:100vh;
+    background:linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)),
+    url('https://images.unsplash.com/photo-1526256262350-7da7584cf5eb') center/cover;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    color:white;
+    text-align:center;
+}
+
+.hero h1{
+    font-size:40px;
+    color:#ffcc00;
+}
+
+.hero p{
+    margin:10px 0;
+}
+
+.btn{
+    background:#e63946;
+    padding:12px 25px;
+    color:white;
+    border:none;
+    border-radius:8px;
+    text-decoration:none;
+    margin-top:15px;
+}
+
+/* ===== SECTIONS ===== */
+section{
+    padding:80px 20px;
+    max-width:1000px;
+    margin:auto;
+}
+
+h2{
+    text-align:center;
+    margin-bottom:30px;
+    color:#0b3d1c;
+}
+
+.center{
+    text-align:center;
+}
+
+/* ===== CARDS ===== */
+.cards{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
+    gap:20px;
+}
+
+.card{
+    background:white;
+    padding:20px;
+    border-radius:10px;
+    box-shadow:0 0 10px rgba(0,0,0,0.1);
+    border-top:5px solid #ffcc00;
+}
+
+/* colors */
+.red{border-top-color:#e63946;}
+.green{border-top-color:#0b3d1c;}
+.yellow{border-top-color:#ffcc00;}
+
+/* ===== DONATION ===== */
+.donation{
+    background:#0b3d1c;
+    color:white;
+    padding:20px;
+    border-radius:10px;
+    text-align:center;
+}
+
+/* ===== FOOTER ===== */
+footer{
+    background:#111;
+    color:white;
+    text-align:center;
+    padding:20px;
+}
